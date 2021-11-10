@@ -1,0 +1,25 @@
+{
+   "type": "postgres",
+   "host": "rajje.db.elephantsql.com",
+   "port": 5432,
+   "username": "ztcmobhe",
+   "password": "Bxq53NICIcPCvTlDn5Yg8Z6-IeTZXUxD",
+   "database": "ztcmobhe",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "./src/entity/*"
+   ],
+
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
